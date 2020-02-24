@@ -1,0 +1,3 @@
+object Enumerations extends App {
+	
+}
