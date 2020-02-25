@@ -1,4 +1,5 @@
 /*
+  https://docs.scala-lang.org/overviews/scala-book/set-class.html
   https://docs.scala-lang.org/overviews/collections-2.13/sets.html
 
   The Scala Set class is an iterable collection with no duplicate elements.

@@ -1,4 +1,5 @@
 /*
+  https://docs.scala-lang.org/overviews/scala-book/list-class.html
   https://www.scala-lang.org/api/current/scala/collection/immutable/List.html
 
   The List class is a linear, immutable sequence.

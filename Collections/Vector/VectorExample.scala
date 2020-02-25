@@ -1,4 +1,5 @@
 /*
+  https://docs.scala-lang.org/overviews/scala-book/vector-class.html
   https://www.scala-lang.org/api/current/scala/collection/immutable/Vector.html
 
   The Vector class is an indexed, immutable sequence.
