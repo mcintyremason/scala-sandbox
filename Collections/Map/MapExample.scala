@@ -12,7 +12,9 @@
 import scala.collection.mutable.Map
 
 object MapExample extends App {
-  // Then you can create a Map like this
+  /*
+    Then you can create a Map like this
+  */
   val states = Map(
     "AK" -> "Alaska",
     "IL" -> "Illinois",
@@ -29,7 +31,9 @@ object MapExample extends App {
   // You also add multiple elements using += (deprecated)
   // states += ("AR" -> "Arkansas", "AZ" -> "Arizona", "TN" -> "Tenessee", "PA" -> "Pennsylvania")
 
-  // You can add elements from another Map using ++=
+  /*
+    You can add elements from another Map using ++=
+  */
   states ++= Map(
     "AR" -> "Arkansas",
     "AZ" -> "Arizona",
@@ -67,7 +71,9 @@ object MapExample extends App {
   println()
   for ((k, v) <- states) println(s"key: $k, value: $v")
 
-  // Using a match expression with the foreach method is also very readable
+  /*
+    Using a match expression with the foreach method is also very readable
+  */
   println()
   states.foreach {
       case(key, value) => println(s"key: $key, value: $value")
