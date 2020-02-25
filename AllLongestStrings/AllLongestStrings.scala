@@ -11,8 +11,7 @@ object AllLongestStrings extends App {
           longestStringLength = string.length()
           longestStrings += string
         } else {
-          longestStrings.remove(0, longestStrings.length - 1)
-          longestStrings.remove(0)
+          longestStrings.clear()
           longestStringLength = string.length()
           longestStrings += string
         }
