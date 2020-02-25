@@ -1,6 +1,6 @@
-import scala.collection.mutable.ArrayBuffer
-
 /*
+  https://docs.scala-lang.org/overviews/scala-book/enumerations-pizza-class.html
+
 	Enumerations are a useful tool for creating small groups of constants,
 		things like the days of the week, months in a year, suits in a deck of cards, etc.,
 		situations where you have a group of related, constant values.
@@ -11,6 +11,8 @@ import scala.collection.mutable.ArrayBuffer
 		and a PizzaTest object in the same file.
 	That’s a very convenient Scala feature.
 */
+
+import scala.collection.mutable.ArrayBuffer
 
 sealed trait Topping
 case object Cheese extends Topping

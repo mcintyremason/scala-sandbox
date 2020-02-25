@@ -1,4 +1,6 @@
 /*
+  https://docs.scala-lang.org/overviews/scala-book/traits-abstract-mixins.html
+
   A great thing about Scala traits is that you can mix multiple traits that have behaviors into classes.
   For example, here’s a combination of traits, one of which defines an abstract method,
     and the others that define concrete method implementations:
@@ -23,16 +25,16 @@ trait Runner {
   Now you can create a Dog class that extends all of those traits while providing behavior for the speak method:
 */
 class Dog(name: String) extends Speaker with TailWagger with Runner {
-    def speak(): String = "Woof!"
+  def speak(): String = "Woof!"
 }
 
 /*
   And here’s a Cat class:
 */
 class Cat extends Speaker with TailWagger with Runner {
-    def speak(): String = "Meow"
-    override def startRunning(): Unit = println("Yeah ... I don't run")
-    override def stopRunning(): Unit = println("No need to stop")
+  def speak(): String = "Meow"
+  override def startRunning(): Unit = println("Yeah ... I don't run")
+  override def stopRunning(): Unit = println("No need to stop")
 }
 
 class Horse(name: String)

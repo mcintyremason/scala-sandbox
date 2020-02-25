@@ -1,4 +1,6 @@
 /*
+  https://docs.scala-lang.org/overviews/scala-book/traits-interfaces.html
+  
   This code declares a trait named TailWagger that states that any class that
     extends TailWagger should implement startTail and stopTail methods.
   

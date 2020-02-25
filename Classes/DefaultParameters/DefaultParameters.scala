@@ -1,3 +1,7 @@
+/*
+  https://docs.scala-lang.org/overviews/scala-book/constructors-default-values.html
+*/
+
 object DefaultParameters extends App {
 	class Socket(var timeout: Int = 2000, var linger: Int = 3000) {
 		override def toString = s"timeout: $timeout, linger: $linger"

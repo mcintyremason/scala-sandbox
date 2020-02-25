@@ -1,4 +1,6 @@
 /*
+  https://docs.scala-lang.org/overviews/scala-book/traits-abstract-mixins.html
+
   You can also add real, working methods to triats and use them like abstract classes,
     or more accurately, as mixins.
 */

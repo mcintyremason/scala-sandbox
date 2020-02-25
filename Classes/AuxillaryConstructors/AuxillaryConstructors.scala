@@ -1,3 +1,7 @@
+/*
+  https://docs.scala-lang.org/overviews/scala-book/classes-aux-constructors.html
+*/
+
 object AuxillaryConstructors extends App {
 	val DefaultCrustSize = 12
 	val DefaultCrustType = "THIN"

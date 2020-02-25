@@ -1,4 +1,6 @@
 /*
+  https://docs.scala-lang.org/overviews/scala-book/abstract-classes.html
+
   Scala also has a concept of an abstract class that is similar to Java’s abstract class.
   But because traits are so powerful, you rarely need to use an abstract class.
   In fact, you only need to use an abstract class when:
