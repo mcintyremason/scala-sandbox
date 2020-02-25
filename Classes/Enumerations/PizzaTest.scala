@@ -1,5 +1,17 @@
 import scala.collection.mutable.ArrayBuffer
 
+/*
+	Enumerations are a useful tool for creating small groups of constants,
+		things like the days of the week, months in a year, suits in a deck of cards, etc.,
+		situations where you have a group of related, constant values.
+
+	As shown, just declare a base trait and then extend that trait with as many case objects as needed.
+
+	Notice how you can put all of the enumerations, a Pizza class,
+		and a PizzaTest object in the same file.
+	That’s a very convenient Scala feature.
+*/
+
 sealed trait Topping
 case object Cheese extends Topping
 case object Pepperoni extends Topping
