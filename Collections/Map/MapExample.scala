@@ -12,13 +12,7 @@
 import scala.collection.mutable.Map
 
 object MapExample extends App {
-  // Then you can create a Map like this:
-  // val states = collection.mutable.Map(
-  //   "AK" -> "Alaska",
-  //   "IL" -> "Illinois",
-  //   "KY" -> "Kentucky"
-  // )
-
+  // Then you can create a Map like this
   val states = Map(
     "AK" -> "Alaska",
     "IL" -> "Illinois",
