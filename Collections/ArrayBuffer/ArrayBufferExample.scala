@@ -1,4 +1,6 @@
 /*
+  https://www.scala-lang.org/api/current/scala/collection/mutable/ArrayBuffer.html
+  
   If you’re an OOP developer coming to Scala from Java,
     the ArrayBuffer class will probably be most comfortable for you,
     so we’ll demonstrate it first. It’s a mutable sequence,
