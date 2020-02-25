@@ -55,23 +55,27 @@ object AnonymousFunctions extends App {
       
     Given this List:
   */
+  println()
   val nums = List.range(1, 10)
+  println(nums)
 
   /*
     This is how you create a new list of all integers whose value is greater than 5:
   */
-  val x = ints.filter(_ > 5)
+  val x = nums.filter(_ > 5)
+  println(x)
 
   /*
     This is how you create a new list whose values are all less than 5:
   */
-  val x = ints.filter(_ < 5)
+  val y = nums.filter(_ < 5)
+  println(y)
 
   /*
     And as a little more complicated example,
       this is how you create a new list that contains only even values,
       by using the modulus operator:
   */
-  val x = ints.filter(_ % 2 == 0)
-
+  val z = nums.filter(_ % 2 == 0)
+  println(z)
 }
