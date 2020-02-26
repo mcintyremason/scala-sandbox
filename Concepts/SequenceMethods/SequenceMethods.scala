@@ -1,4 +1,7 @@
 /*
+  https://docs.scala-lang.org/overviews/scala-book/collections-methods.html
+  https://docs.scala-lang.org/overviews/collections-2.13/seqs.html
+
   Note: The methods don’t mutate the collection
 
   As a very important note, none of these methods mutate the collection that they’re called on.
@@ -79,7 +82,7 @@ object SequenceMethods extends App {
       The head method comes from Lisp and functional programming languages.
       It’s used to print the first element (the head element) of a list.
     */
-    println("\nheadExamples:")
+    println("\nhead:")
     
     println(s"nums.head: ${nums.head}")
     println(s"names.head: ${names.head}")
@@ -107,7 +110,7 @@ object SequenceMethods extends App {
       The tail method also comes from Lisp and functional programming languages.
       It’s used to print every element in a list after the head element.
     */
-    println("\ntailExamples:")
+    println("\ntail:")
     
     println(s"nums.tail: ${nums.tail}")
     println(s"names.tail: ${names.tail}")
@@ -135,8 +138,6 @@ object SequenceMethods extends App {
       The take and takeWhile methods give you a nice way of taking
         the elements out of a list that you want to create a new list.
     */
-    println("\ntakeAndTakeWhileExamples:")
-
     println("\ntake:")
     println(s"nums.take(1): ${nums.take(1)}")
     println(s"nums.take(2): ${nums.take(5)}")
@@ -154,8 +155,6 @@ object SequenceMethods extends App {
 
       drop and dropWhile are essentially the opposite of take and takeWhile.
     */
-    println("\ndropAndDropWhileExamples:")
-
     println("\ndrop:")
     println(s"nums.drop(1): ${nums.drop(1)}")
     println(s"nums.drop(5): ${nums.drop(5)}")
@@ -167,6 +166,36 @@ object SequenceMethods extends App {
     println(s"names.dropWhile(_ != 'chris'): ${names.dropWhile(_ != "chris")}")
   }
 
+  def reduceExamples(): Unit = {
+    /*
+      When you hear the term, “map reduce,” the “reduce” part refers to methods like reduce.
+      It takes a function (or anonymous function) and applies that function to successive elements in the list.
+
+      The best way to explain reduce is to create a little helper method you can pass into it.
+
+      An important part to know about reduce is that 
+        it’s used to reduce a collection down to a single value.
+    */
+    def sum(x: Int, y: Int): Int = {
+      val theSum = x + y
+      println(s"received $x and $y, their sum is $theSum")
+      theSum
+    }
+
+    println("\nreduce:")
+    println(s"nums.reduce(sum): ${nums.reduce(sum)}")
+
+    /*
+      Once you get used to reduce, you’ll write a “sum” algorithm like this:
+    */
+    println(s"nums.reduce(_ + _): ${nums.reduce(_ + _)}")
+
+    /*
+      Similarly, this is what a “product” algorithm looks like:
+    */
+    println(s"nums.reduce(_ * _): ${nums.reduce(_ * _)}")
+  }
+
   println(s"nums: ${nums}")
   println(s"names: ${names}")
   
@@ -176,5 +205,6 @@ object SequenceMethods extends App {
   // headExamples()
   // tailExamples()
   // takeAndTakeWhileExamples()
-  dropAndDropWhileExamples()
+  // dropAndDropWhileExamples()
+  reduceExamples()
 }
