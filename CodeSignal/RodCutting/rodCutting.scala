@@ -2,7 +2,7 @@ import scala.collection.mutable
 object rodCutting extends App {
 	def rodCutting(n: Int, v: Array[Int]): Int = {
     var revenue: Int = 0
-    var values =  Seq[Int]()
+    var values = Seq[Int]()
 
     def calcRevenue(revenue: Int, length: Int, v: Array[Int]): Int = {
       var maxRev = revenue
@@ -40,6 +40,48 @@ object rodCutting extends App {
     }
 
     values.max
+  }
+
+  def rodCuttingSubmission(n: Int, v: Array[Int]): Int = {
+    var r = 0
+    var w = Seq[Int]()
+
+    def C(r: Int, l: Int, v: Array[Int]): Int = {
+      var m = r
+
+      if (r < v(l)) {
+        m = v(l)
+      } else if (r < (r + v(l))) {
+        m = (r + v(l))
+      }
+
+      m
+    }
+
+    def R(r: Int, c: Int, k: Int, v: Array[Int]): Int = {
+      var m = r
+      var l = c
+      val limit = (n - c)
+
+      if (k <= 0) {
+        m
+      } else if (k - l >= 0 && l != 0) {
+        R(C(m, c, v), l, k - l, v)
+      } else if (k - l < 0) {
+        R(m, 0, k, v)
+      } else if (k > 0) {
+        R(C(m, c, v), l + 1, k - l, v)
+      } else {
+        m
+      }
+    }
+
+    for(s <- n to 0 by -1) {
+      w = w :+ R(r, s, n, v)
+      r = 0
+    }
+
+    w.max
   }
   
   val n = 4
