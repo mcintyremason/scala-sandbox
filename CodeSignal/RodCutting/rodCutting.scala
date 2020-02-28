@@ -61,9 +61,7 @@ object RodCutting extends App {
       var l = c
       val limit = (n - c)
 
-      if (k <= 0) {
-        m
-      } else if (k - l >= 0 && l != 0) {
+      if (k - l >= 0 && l != 0) {
         R(C(m, c, v), l, k - l, v)
       } else if (k - l < 0) {
         R(m, 0, k, v)
