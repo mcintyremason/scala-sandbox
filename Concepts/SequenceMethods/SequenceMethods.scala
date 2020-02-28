@@ -140,7 +140,7 @@ object SequenceMethods extends App {
     */
     println("\ntake:")
     println(s"nums.take(1): ${nums.take(1)}")
-    println(s"nums.take(2): ${nums.take(5)}")
+    println(s"nums.take(5): ${nums.take(5)}")
     println(s"names.take(1): ${names.take(1)}")
     println(s"names.take(2): ${names.take(2)}")
 
@@ -204,7 +204,7 @@ object SequenceMethods extends App {
   // foreachExamples()
   // headExamples()
   // tailExamples()
-  // takeAndTakeWhileExamples()
+  takeAndTakeWhileExamples()
   // dropAndDropWhileExamples()
-  reduceExamples()
+  // reduceExamples()
 }
