@@ -52,21 +52,86 @@ class Pizza (
   An Order class, where an Order consists of a mutable list of pizzas and a Customer.
 */
 class Order (
-    var pizzas: ArrayBuffer[Pizza],
-    var customer: Customer
-)
+  var pizzas: ArrayBuffer[Pizza],
+  var customer: Customer
+) {
+	def addPizza(p: Pizza): Unit = pizzas += p
+  def removePizza(p: Pizza): Unit = pizzas -= p
+
+  // need to implement these
+  def getBasePrice(): Int = ???
+  def getTaxes(): Int = ???
+	def getTotalPrice(): Int = ???
+	def printOrder(): Unit = {
+    println(s"Name: ${customer.name}")
+    println(s"Phone Number: ${customer.phone}")
+    println()
+
+		for (pizza <- pizzas) {
+			println(s"crustSize: ${pizza.crustSize}")
+      println(s"crustType: ${pizza.crustType}")
+      println("Toppings:")
+      for (topping <- pizza.toppings) println(topping)
+      println()
+		}
+	}
+}
 
 class Customer (
-    var name: String,
-    var phone: String,
-    var address: Address
+  var name: String,
+  var phone: String,
+  var address: Address
 )
 
 class Address (
-    var street1: String,
-    var street2: String,
-    var city: String,
-    var state: String,
-    var zipCode: String
+  var street1: String,
+  var street2: String,
+  var city: String,
+  var state: String,
+  var zipCode: String
 )
 
+object OOPPizzaExample extends App {
+  val p1 = new Pizza (
+    MediumCrustSize,
+    ThinCrustType,
+    ArrayBuffer(Cheese)
+  )
+
+  val p2 = new Pizza (
+    LargeCrustSize,
+    ThinCrustType,
+    ArrayBuffer(Cheese, Pepperoni, Sausage)
+  )
+
+  val address = new Address (
+    "123 Main Street",
+    "Apt. 1",
+    "Talkeetna",
+    "Alaska",
+    "99676"
+  )
+
+  val customer = new Customer (
+    "Alvin Alexander",
+    "907-555-1212",
+    address
+  )
+
+  val order = new Order(
+    ArrayBuffer(p1, p2),
+    customer
+  )
+
+  order.addPizza(
+    new Pizza (
+      SmallCrustSize,
+      ThinCrustType,
+      ArrayBuffer(Cheese, Mushrooms)
+    )
+  )
+
+  // print the order
+  order.printOrder
+
+}
