@@ -1,0 +1,5 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mMathUtilsSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mMathUtils::double[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should handle 0 as input[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should handle 1[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[33m- should handle really large integers (pending)[0m[0m
