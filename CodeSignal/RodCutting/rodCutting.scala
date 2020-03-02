@@ -1,5 +1,5 @@
 import scala.collection.mutable
-object rodCutting extends App {
+object RodCutting extends App {
 	def rodCutting(n: Int, v: Array[Int]): Int = {
     var revenue: Int = 0
     var values = Seq[Int]()
@@ -21,9 +21,7 @@ object rodCutting extends App {
       var length = currLength
       val limit = (n - currLength)
 
-      if (lengthLeft <= 0) {
-        maxRev
-      } else if (lengthLeft - length >= 0 && length != 0) {
+      if (lengthLeft - length >= 0 && length != 0) {
         checkRemainder(calcRevenue(maxRev, currLength, v), length, lengthLeft - length, v)
       } else if (lengthLeft - length < 0) {
         checkRemainder(maxRev, 0, lengthLeft, v)
@@ -63,9 +61,7 @@ object rodCutting extends App {
       var l = c
       val limit = (n - c)
 
-      if (k <= 0) {
-        m
-      } else if (k - l >= 0 && l != 0) {
+      if (k - l >= 0 && l != 0) {
         R(C(m, c, v), l, k - l, v)
       } else if (k - l < 0) {
         R(m, 0, k, v)
@@ -85,8 +81,8 @@ object rodCutting extends App {
   }
   
   val n = 4
-  // val v = Array(0, 2, 4, 7, 7)
-  val v = Array(0, 0, 4, 7, 1)
+  val v = Array(0, 2, 4, 7, 7)
+  // val v = Array(0, 0, 4, 7, 1)
 
   println(rodCutting(n, v))
 }
