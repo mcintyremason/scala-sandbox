@@ -1,0 +1,13 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /Users/masonmcintyre/repos/scala-sandbox/Concepts/SMBT/HelloScalaTest/target/scala-2.13/helloscalatest_2.13-1.0.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	simpletest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/masonmcintyre/repos/scala-sandbox/Concepts/SMBT/HelloScalaTest/target/scala-2.13/classes/simpletest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	simpletest/Hello$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/masonmcintyre/repos/scala-sandbox/Concepts/SMBT/HelloScalaTest/target/scala-2.13/classes/simpletest/Hello$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	simpletest/Hello$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/masonmcintyre/repos/scala-sandbox/Concepts/SMBT/HelloScalaTest/target/scala-2.13/classes/simpletest/Hello$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	simpletest/Person.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/masonmcintyre/repos/scala-sandbox/Concepts/SMBT/HelloScalaTest/target/scala-2.13/classes/simpletest/Person.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	simpletest/Hello.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/masonmcintyre/repos/scala-sandbox/Concepts/SMBT/HelloScalaTest/target/scala-2.13/classes/simpletest/Hello.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m
