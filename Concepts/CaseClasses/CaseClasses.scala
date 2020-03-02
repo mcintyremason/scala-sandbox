@@ -1,4 +1,6 @@
 /*
+  https://docs.scala-lang.org/overviews/scala-book/case-classes.html
+  
   A case class has all of the functionality of a regular class, and more.
 
   When the compiler sees the case keyword in front of a class, it generates code for you, with the following benefits:

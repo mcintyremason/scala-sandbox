@@ -1,4 +1,6 @@
 /*
+  https://docs.scala-lang.org/overviews/scala-book/no-null-values.html
+
   Functional programming is like writing a series of algebraic equations,
     and because you don’t use null values in algebra, you don’t use null values in FP
   Scala’s solution is to use constructs like the Option/Some/None classes.

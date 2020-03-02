@@ -1,3 +1,6 @@
+/*
+  https://docs.scala-lang.org/overviews/scala-book/scala-build-tool-sbt.html
+*/
 package simpletest
 
 import org.scalatest.FunSuite
@@ -16,5 +19,4 @@ class HelloTests extends FunSuite {
     p.name = "Ochocinco"
     assert(p.name == "Ochocinco")
   }
-
 }

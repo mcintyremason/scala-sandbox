@@ -1,4 +1,7 @@
 /*
+  https://docs.scala-lang.org/overviews/scala-book/pure-functions.html
+  https://docs.scala-lang.org/overviews/scala-book/passing-functions-around.html
+
   A first feature Scala offers to help you write functional code is the ability to write pure functions.
   In Functional Programming, a pure function like this:
     - The function’s output depends only on its input variables
