@@ -4,6 +4,13 @@
   Because functional programming is like algebra, there are no null values or exceptions.
   But of course you can still have exceptions when you try to access servers that are down or files that are missing,
     so what can you do? This lesson demonstrates the techniques of functional error handling in Scala.
+
+  There are other classes that work in a similar manner,
+    including Either/Left/Right in the Scala library, and other third-party libraries,
+    but Option/Some/None and Try/Success/Failure are commonly used, and good to learn first.
+  You can use whatever you like, but Try/Success/Failure is generally used when dealing with code that can throw exceptions
+    — because you almost always want to understand the exception
+    — and Option/Some/None is used in other places, such as to avoid using null values
 */
 
 /*
