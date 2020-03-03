@@ -1,15 +1,13 @@
-import scala.collection.mutable.ArrayBuffer
-
 object MinimumOnStack extends App {
 	def minimumOnStack(operations: Array[String]): Array[Int] = {
-    var stack = ArrayBuffer[Int]()
-    val minStack = ArrayBuffer[Int]()
+    var stack = Array[Int]()
+    val minStack = Array[Int]()
 
     for (op <- operations) {
       op.split(' ')(0) match {
         case "push" => stack = op.split(' ')(1).toInt +: stack
-        case "pop" => stack -= stack.head
-        case "min" => minStack += stack.min
+        case "pop" => stack = stack.tail
+        case "min" => minStack = minStack :+ stack.min
       }
     }
 
