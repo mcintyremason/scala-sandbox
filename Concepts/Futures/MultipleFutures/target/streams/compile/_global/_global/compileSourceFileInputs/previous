@@ -1,0 +1,1 @@
+["sbt.Task[scala.collection.immutable.Map[java.lang.String, scala.collection.Seq[scala.Tuple2[java.nio.file.Path, sbt.nio.FileStamp]]]]",{"2.13.1":{"hashes":[["/Users/mahun/repos/scala-sandbox/Concepts/Futures/MultipleFutures/src/main/scala/futures/MultipleFutures.scala","3c12ddc93a11f39b25392d8f5c125622cff8d196"]],"lastModifiedTimes":[]}}]

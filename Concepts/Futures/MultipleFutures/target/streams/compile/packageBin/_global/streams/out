@@ -1,0 +1,11 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /Users/mahun/repos/scala-sandbox/Concepts/Futures/MultipleFutures/target/scala-2.13/multiplefutures_2.13-1.0.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	futures[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/mahun/repos/scala-sandbox/Concepts/Futures/MultipleFutures/target/scala-2.13/classes/futures[0m
+[0m[[0m[0mdebug[0m] [0m[0m	futures/MultipleFutures$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/mahun/repos/scala-sandbox/Concepts/Futures/MultipleFutures/target/scala-2.13/classes/futures/MultipleFutures$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	futures/MultipleFutures.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/mahun/repos/scala-sandbox/Concepts/Futures/MultipleFutures/target/scala-2.13/classes/futures/MultipleFutures.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	futures/MultipleFutures$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/mahun/repos/scala-sandbox/Concepts/Futures/MultipleFutures/target/scala-2.13/classes/futures/MultipleFutures$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m
