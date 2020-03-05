@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/masonmcintyre/repos/scala-sandbox/Play/play-samples-play-scala-hello-world-tutorial/conf/routes
-// @DATE:Thu Mar 05 12:24:53 EST 2020
+// @DATE:Thu Mar 05 17:21:59 EST 2020
 
 package controllers;
 

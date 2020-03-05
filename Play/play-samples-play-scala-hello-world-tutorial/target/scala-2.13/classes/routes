@@ -7,6 +7,8 @@
 GET     /                                   controllers.HomeController.index
 GET     /explore                            controllers.HomeController.explore
 GET     /tutorial                           controllers.HomeController.tutorial
+GET     /mason                              controllers.HomeController.mason
+GET     /hello/:name                         controllers.HomeController.hello(name)
 
 
 # Map static resources from the /public folder to the /assets URL path

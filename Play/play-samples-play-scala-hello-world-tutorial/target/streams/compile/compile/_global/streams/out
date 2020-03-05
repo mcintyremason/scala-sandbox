@@ -1,0 +1,11 @@
+[0m[[0m[31merror[0m] [0m[0m/Users/masonmcintyre/repos/scala-sandbox/Play/play-samples-play-scala-hello-world-tutorial/conf/routes:11:1: missing argument list for method play in class ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0mUnapplied methods are only converted to functions when a function type is expected.[0m
+[0m[[0m[31merror[0m] [0m[0mYou can make this conversion explicit by writing `play _` or `play(_)` instead of `play`.[0m
+[0m[[0m[31merror[0m] [0m[0mGET     /play/:name                         controllers.HomeController.play(name)[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/masonmcintyre/repos/scala-sandbox/Play/play-samples-play-scala-hello-world-tutorial/conf/routes:11:1: stable identifier required, but ReverseHomeController.this.play found.[0m
+[0m[[0m[31merror[0m] [0m[0mGET     /play/:name                         controllers.HomeController.play(name)[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/masonmcintyre/repos/scala-sandbox/Play/play-samples-play-scala-hello-world-tutorial/conf/routes:11:1: value api is not a member of play.api.routing.JavaScriptReverseRoute[0m
+[0m[[0m[31merror[0m] [0m[0mGET     /play/:name                         controllers.HomeController.play(name)[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/masonmcintyre/repos/scala-sandbox/Play/play-samples-play-scala-hello-world-tutorial/conf/routes:11:1: value play is not a member of controllers.HomeController[0m
+[0m[[0m[31merror[0m] [0m[0mGET     /play/:name                         controllers.HomeController.play(name)[0m
+[0m[[0m[31merror[0m] [0m[0mfour errors found[0m

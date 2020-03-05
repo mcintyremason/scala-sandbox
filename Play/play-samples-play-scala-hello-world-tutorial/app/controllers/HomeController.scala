@@ -29,5 +29,13 @@ class HomeController @Inject()(cc: ControllerComponents) extends AbstractControl
   def tutorial() = Action { implicit request: Request[AnyContent] =>
     Ok(views.html.tutorial())
   }
+
+  def mason() = Action { implicit request: Request[AnyContent] =>
+    Ok(views.html.mason())
+  }
+
+  def hello(name: String) = Action {
+    Ok(s"Hello, ${name}!")
+  }
   
 }
