@@ -11,8 +11,8 @@ object ListVsVector extends App {
   val vector = Vector.range(0, 1000)
   val indexedSeq = IndexedSeq.range(0, 1000)
 
-  // println(s"list: ${list}")
-  // println(s"vector: ${vector}")
+//   println(s"list: ${list}")
+//   println(s"vector: ${vector}")
   println(s"list(1): ${list(1)}")
   time { list(1) }
   println(s"vector(1): ${vector(1)}")
